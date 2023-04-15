@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['@commitlint/config-conventional'],
+    extends: ['@commitlint/config-conventional', 'gitmoji'],
     rules: {
         'header-max-length': [0, 'always', 72],
         'body-min-length': [0, 'always', 10],
