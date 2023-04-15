@@ -48,3 +48,4 @@ break
 1
 2
 3
+minor
