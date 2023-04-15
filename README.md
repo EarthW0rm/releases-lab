@@ -42,6 +42,8 @@ npm i -D @semantic-release/changelog
 
 npm i -D semantic-release-config-gitmoji
 
+npm install @semantic-release/git -D
+
 brew install gitmoji
 
 gitmoji -c

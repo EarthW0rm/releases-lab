@@ -8,7 +8,6 @@
     [
       "@semantic-release/commit-analyzer",
       {
-        "preset": "angular",
         "releaseRules": [
           {
             "type": "feat",
@@ -37,8 +36,7 @@
           {
             "type": "perf",
             "release": "patch"
-          },
-          
+          },          
         ],
         "parserOpts": {
           "noteKeywords": [
@@ -56,23 +54,9 @@
         "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file."
       }
     ],
-    [
-      "@semantic-release/npm",
-      {
-        "npmPublish": false,
-        "tarballDir": "."
-      }
-    ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "package.json",
-          "CHANGELOG.md"
-        ],
-        "message": "chore: ${nextRelease.version} release"
-      }
-    ],
+    ["@semantic-release/git", {
+      "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+    }],
     "@semantic-release/github"
   ]
 }
