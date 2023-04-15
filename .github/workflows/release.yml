@@ -23,9 +23,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-      - run: >-
-          git push
-          https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ secrets.GITHUB_REPOSITORY }}.git
-          HEAD:refs/heads/v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: true
