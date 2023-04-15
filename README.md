@@ -43,3 +43,5 @@ npm i -D @semantic-release/changelog
 NOva versao 
 
 Nova versao feature
+
+break
