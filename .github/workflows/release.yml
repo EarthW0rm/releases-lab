@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   release:
     name: Release
@@ -30,3 +31,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
