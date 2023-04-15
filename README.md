@@ -37,3 +37,5 @@ npm install --save-dev semantic-release
 npm install -D  @semantic-release/git
 
 npm i -D @semantic-release/commit-analyzer @semantic-release/release-notes-generator
+
+npm i -D @semantic-release/changelog
