@@ -60,3 +60,6 @@ https://engineeringfordatascience.com/posts/gitmoji/#:~:text=You%20can%20add%20e
 
 
 https://www.npmjs.com/package/commitlint-config-gitmoji
+
+
+nova feature
