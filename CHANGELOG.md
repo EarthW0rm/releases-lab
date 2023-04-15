@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+# [2.5.0](https://github.com/EarthW0rm/releases-lab/compare/2.4.0...2.5.0) (2023-04-15)
+
 # [2.4.0](https://github.com/EarthW0rm/releases-lab/compare/v2.3.0...2.4.0) (2023-04-15)
 
 
