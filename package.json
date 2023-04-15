@@ -50,8 +50,8 @@
 				{ "type": "fix", "release": "patch" },
 				{ "type": "feat", "release": "minor" },
 				
-				{ "type": "perf", "scope":"CI", "release": "patch" },
-				{ "type": "perf", "scope":"CD", "release": "patch" }
+				{ "type": "perf", "scope":"ci", "release": "patch" },
+				{ "type": "perf", "scope":"cd", "release": "patch" }
           ],
           "parserOpts": {
             "noteKeywords": [
@@ -65,17 +65,22 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "CHANGELOG.md",
-          "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file."
+          "changelogFile": "docs/CHANGELOG.md",
+          "changelogTitle": "# Changelog\n\nRegistro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!"
         }
       ],
       [
         "@semantic-release/git",
         {
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+			 "assets": ["docs/CHANGELOG.md"]
         }
       ],
-      "@semantic-release/github"
+      ["@semantic-release/github", {
+			"assets": [
+			  {"path": "docs/CHANGELOG.md", "label": "Changelog"}
+			]
+		 }]
     ]
   }
 }
