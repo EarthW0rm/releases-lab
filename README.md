@@ -42,11 +42,15 @@ npm i -D @semantic-release/changelog
 
 npm i -D semantic-release-config-gitmoji
 
+npm install --save-dev @commitlint/config-angular
+
 npm install @semantic-release/git -D
 
 brew install gitmoji
 
 gitmoji -c
+
+https://www.conventionalcommits.org/en/v1.0.0/#summary
 
 https://engineeringfordatascience.com/posts/gitmoji/#:~:text=You%20can%20add%20emojis%20to,message%20summary%20%2D%20cool%2C%20right%3F
 

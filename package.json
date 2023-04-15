@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-angular": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@commitlint/types": "^17.4.4",
     "@semantic-release/changelog": "^6.0.3",
@@ -38,60 +39,43 @@
       }
     ],
     "tagFormat": "${version}",
-  "plugins": [
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        "releaseRules": [
-          {
-            "type": "feat",
-            "release": "minor"
-          },
-			    {
-            "type": "ops",
-            "release": "minor"
-          },
-          {
-            "type": ":bug:",
-            "release": "patch"
-          },
-          {
-            "type": "refactor",
-            "release": "patch"
-          },
-          {
-            "type": "fix",
-            "release": "patch"
-          },
-          {
-            "type": "docs",
-            "release": "patch"
-          },
-          {
-            "type": "perf",
-            "release": "patch"
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "releaseRules": [
+				{ "type": "docs", "scope":"ADR", "release": "minor" },
+				{ "type": "docs", "release": "patch" },
+				
+				{ "type": "fix", "release": "patch" },
+				{ "type": "feat", "release": "minor" },
+				
+				{ "type": "perf", "scope":"CI", "release": "patch" },
+				{ "type": "perf", "scope":"CD", "release": "patch" }
+          ],
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING CHANGE",
+              "BREAKING CHANGES"
+            ]
           }
-        ],
-        "parserOpts": {
-          "noteKeywords": [
-            "BREAKING CHANGE",
-            "BREAKING CHANGES"
-          ]
         }
-      }
-    ],
-    "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md",
-        "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file."
-      }
-    ],
-    ["@semantic-release/git", {
-      "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-    }],
-    "@semantic-release/github"
-  ]
+      ],
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md",
+          "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file."
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   }
 }
