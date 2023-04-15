@@ -60,7 +60,7 @@ break
 2
 3
 minor
-
+ new minor
 
 
 
