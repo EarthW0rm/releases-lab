@@ -10,7 +10,8 @@
     "commitlint": "^17.6.1",
     "commitlint-config-gitmoji": "^2.3.1",
     "husky": "^8.0.3",
-    "semantic-release": "^21.0.1"
+    "semantic-release": "^21.0.1",
+    "semantic-release-config-gitmoji": "^1.4.3"
   },
   "name": "releases-lab",
   "description": "Casos de uso para releases e deploys",

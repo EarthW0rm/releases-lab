@@ -3,6 +3,7 @@
     "main",
     "next"
   ],
+  "extends": ["semantic-release-config-gitmoji"],
   "tagFormat": "${version}",
   "plugins": [
     [

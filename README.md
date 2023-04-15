@@ -40,6 +40,17 @@ npm i -D @semantic-release/commit-analyzer @semantic-release/release-notes-gener
 
 npm i -D @semantic-release/changelog
 
+npm i -D semantic-release-config-gitmoji
+
+brew install gitmoji
+
+gitmoji -c
+
+https://engineeringfordatascience.com/posts/gitmoji/#:~:text=You%20can%20add%20emojis%20to,message%20summary%20%2D%20cool%2C%20right%3F
+
+
+https://www.npmjs.com/package/commitlint-config-gitmoji
+
 NOva versao 
 
 Nova versao feature
@@ -52,14 +63,8 @@ minor
 
 
 
-brew install gitmoji
 
-gitmoji -c
-
-https://engineeringfordatascience.com/posts/gitmoji/#:~:text=You%20can%20add%20emojis%20to,message%20summary%20%2D%20cool%2C%20right%3F
-
-
-https://www.npmjs.com/package/commitlint-config-gitmoji
 
 
 nova feature
+feature 4
