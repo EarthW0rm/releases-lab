@@ -40,4 +40,6 @@ npm i -D @semantic-release/commit-analyzer @semantic-release/release-notes-gener
 
 npm i -D @semantic-release/changelog
 
-NOva versao
+NOva versao 
+
+Nova versao feature
