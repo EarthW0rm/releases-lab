@@ -44,14 +44,33 @@
         "@semantic-release/commit-analyzer",
         {
           "releaseRules": [
-				{ "type": "docs", "scope":"ADR", "release": "minor" },
-				{ "type": "docs", "release": "patch" },
-				
-				{ "type": "fix", "release": "patch" },
-				{ "type": "feat", "release": "minor" },
-				
-				{ "type": "perf", "scope":"ci", "release": "patch" },
-				{ "type": "perf", "scope":"cd", "release": "patch" }
+            {
+              "type": "docs",
+              "scope": "ADR",
+              "release": "minor"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "perf",
+              "scope": "ci",
+              "release": "patch"
+            },
+            {
+              "type": "perf",
+              "scope": "cd",
+              "release": "patch"
+            }
           ],
           "parserOpts": {
             "noteKeywords": [
@@ -75,9 +94,13 @@
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ],
-      ["@semantic-release/github", {
-			"assets": false
-		 }]
-    ]
+      [
+        "@semantic-release/github",
+        {
+          "assets": false
+        }
+      ]
+    ],
+	 "extends": ["semantic-release-config-gitmoji"]
   }
 }
