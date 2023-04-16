@@ -23,7 +23,7 @@ module.exports = {
             "@semantic-release/changelog",
             {
                 "changelogFile": "docs/CHANGELOG.md",
-                "changelogTitle": "# Changelog\n\nRegistro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!"
+                "changelogTitle": "# Changelog \n\nRegistro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!"
             }
         ],
         [
