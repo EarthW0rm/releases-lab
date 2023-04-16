@@ -57,6 +57,10 @@
               "type": "fix",
               "release": "patch"
             },
+				{
+					"type": ":bug: fix",
+					"release": "patch"
+				},
             {
               "type": "feat",
               "release": "minor"
