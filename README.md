@@ -42,6 +42,8 @@ npm i -D @semantic-release/changelog
 
 npm i -D semantic-release-config-gitmoji
 
+npm i -D semantic-release-gitmoji
+
 npm install --save-dev @commitlint/config-angular
 
 npm install @semantic-release/git -D
