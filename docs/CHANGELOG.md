@@ -1,3 +1,14 @@
+# Changelog 
+
+Registro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!
+
+## [3.0.3](https://github.com/EarthW0rm/releases-lab/compare/v3.0.2...v3.0.3) (2023-04-17)
+
+
+### Bug Fixes
+
+* better changelog ([aee74c6](https://github.com/EarthW0rm/releases-lab/commit/aee74c669028a2db92abe5221a27cbe9b5867673))
+
 # Changelog
 
 Registro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!
