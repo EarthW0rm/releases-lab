@@ -1,4 +1,4 @@
 module.exports = {
-    // extends: ['@commitlint/config-conventional']
-    extends: ['gitmoji']
+    extends: ['@commitlint/config-conventional']
+    // extends: ['gitmoji']
 }
