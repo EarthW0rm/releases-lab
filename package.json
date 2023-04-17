@@ -17,7 +17,7 @@
   },
   "name": "releases-lab",
   "description": "Casos de uso para releases e deploys",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "commitlint.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
