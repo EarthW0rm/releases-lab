@@ -2,6 +2,14 @@
 
 Registro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!
 
+## [3.0.4](https://github.com/EarthW0rm/releases-lab/compare/v3.0.3...v3.0.4) (2023-04-17)
+
+
+### Bug Fixes
+
+* **:bug::** adicionando hello ([2c493dc](https://github.com/EarthW0rm/releases-lab/commit/2c493dccb54adc9cd3489c8abd3d6f7a7c8a592d))
+* **:bug::** merge branch 'main' of github.com:EarthW0rm/releases-lab ([166359f](https://github.com/EarthW0rm/releases-lab/commit/166359f040c7139ba94095394d9443ebe31ffc81))
+
 ## [3.0.3](https://github.com/EarthW0rm/releases-lab/compare/v3.0.2...v3.0.3) (2023-04-17)
 
 
