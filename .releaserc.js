@@ -71,6 +71,12 @@ module.exports = {
                 "changelogTitle": "# Changelog \n\nRegistro de Alterações: Mantenha-se Atualizado com as Últimas Novidades e Melhorias!"
             }
         ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": ["docs/CHANGELOG.md"]
+            }
+        ],
 
         [
             "@semantic-release/github",
