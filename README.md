@@ -36,9 +36,9 @@ npm install --save-dev semantic-release
 
 npm install -D  @semantic-release/git
 
-npm i -D @semantic-release/commit-analyzer @semantic-release/release-notes-generator
+npm i -D @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog
 
-npm i -D @semantic-release/changelog
+npm i -D 
 
 npm i -D semantic-release-config-gitmoji
 
