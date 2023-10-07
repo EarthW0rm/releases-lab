@@ -31,14 +31,8 @@ module.exports = {
 
 ```
 
-npm install --save-dev semantic-release
+npm install --save-dev semantic-release  @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog
 
-
-npm install -D  @semantic-release/git
-
-npm i -D @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog
-
-npm i -D 
 
 npm i -D semantic-release-config-gitmoji
 
@@ -46,7 +40,6 @@ npm i -D semantic-release-gitmoji
 
 npm install --save-dev @commitlint/config-angular
 
-npm install @semantic-release/git -D
 
 brew install gitmoji
 
